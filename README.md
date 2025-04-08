@@ -140,7 +140,7 @@ if __name__ == "__main__":
     main()
 
 ```
-### 🚀 Running the Python Node
+#### 🚀 Running the Python Node
 
 Navigate back to your file location and execute your Python node:
 
@@ -159,7 +159,7 @@ chmod +x my_first_node.py
 
 
 ```
-### ⚙️ Creating a ROS 2 Executable (Console Script)
+#### ⚙️ Creating a ROS 2 Executable (Console Script)
 
 We are creating an **executable named `py_node`**.
 
@@ -170,7 +170,96 @@ We are creating an **executable named `py_node`**.
 'py_node = my_py_pkg.my_first_node:main',
 ```
 
+#### 🏗️ Build the Package
 
-  
+Since the executable has been created, we now need to **build the package**:
 
+```bash
+# 🔨 Build only the selected package
+colcon build --packages-select my_py_pkg
+
+# 🔙 Go to home directory (optional)
+cd
+```
+#### 🔄 Source the Workspace
+
+
+Since we built something new, we need to **source the workspace** so the environment is aware of the changes:
+
+```
+source install/setup.bash
+```
+
+#### 🔄 Run the executable directly from the terminal
+🧠 Terminology
+
+    Node Name:
+    This is the name you define inside your Python or C++ ROS 2 file using rclpy.create_node() (Python) or Node("name") (C++).
+    Example:
+    ``` 
+    node = Node("my_node_name")  # <- This is the Node Name
+    ```
+    Executable Name:
+This is the name you assign in your setup.py or CMakeLists.txt and use with ROS 2 CLI commands like ros2 run.
+Example:
+```
+ros2 run my_py_pkg my_executable_name
+```
+🧑‍💻 Example: Running the Node
+
+To run the node from the terminal, use the following command:
+
+
+```bash
+ros2 run my_py_pkg py_node
+```
+#### 🐍 Minimal ROS 2 Python Node with OOPs
+```
+#!/usr/bin/env python3  # Add the interpreter line to run the script directly
+
+# 📦 Import necessary ROS 2 libraries
+import rclpy
+from rclpy.node import Node  # Import the Node class to create your custom node
+
+# 🧠 Define the custom node class
+class Mynode(Node):
+    def __init__(self):
+        super().__init__("py_test")  # Initialize the parent Node class with name "py_test"
+        self.get_logger().info("Hello World")  # 🗣️ Log a message to the terminal
+
+def main(args=None):
+    # 🔧 Initialize ROS 2 communication
+    rclpy.init(args=args)
+
+    # 🧠 Create an instance of Mynode (our custom node class)
+    node = Mynode()
+
+    # 🗣️ Keep the node running by spinning it
+    rclpy.spin(node)
+
+    # 🛑 Shutdown the ROS 2 communication cleanly
+    rclpy.shutdown()
+
+# ▶️ Run the main function when the script is executed directly
+if __name__ == "__main__":
+    main()
+```
+
+#### 🏗️ Explanation of python code with OOPs
+🧠 Object-Oriented Programming (OOP) Concepts in Mynode Class
+
+    Class: Mynode
+    The Mynode class is a custom class that defines the behavior of a ROS 2 node. It inherits functionality from the base Node class and extends it by adding custom behavior, such as logging a message.
+
+    Inheritance: Mynode inherits from Node
+    The Mynode class inherits from the Node class, enabling it to leverage built-in ROS 2 node functionality (e.g., communication, logging). This allows the custom node to maintain ROS 2's standard features while adding specific behavior like logging a "Hello World" message.
+
+    Constructor (__init__)
+    The __init__ method is the constructor for the Mynode class. It is automatically invoked when an instance of Mynode is created. The constructor is used to initialize the node, configure settings (e.g., setting the node's name), and perform setup tasks such as logging a message.
+
+    Object Creation
+    In the main function, an instance of the Mynode class is created. This instance represents the actual node running in the ROS 2 system. The node will perform the behavior defined in the Mynode class, such as logging messages and spinning to keep the node alive.
+
+    Encapsulation
+    All node-specific logic (such as logging and spinning) is encapsulated within the Mynode class. This ensures that the code is modular, making it easier to maintain, extend, and reuse. The class handles all aspects of node functionality, isolating the details from other parts of the system.
 
