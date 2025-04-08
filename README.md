@@ -262,4 +262,54 @@ if __name__ == "__main__":
 
     Encapsulation
     All node-specific logic (such as logging and spinning) is encapsulated within the Mynode class. This ensures that the code is modular, making it easier to maintain, extend, and reuse. The class handles all aspects of node functionality, isolating the details from other parts of the system.
+    
+#### 🐍  ROS 2 Python Node with additional functionalities- Execute my function for every x amount of time(Timer Node)
+This is a simple ROS 2 Python node that prints "Hello" followed by a counter every second using a timer callback. It's a great starting point to learn how to create nodes in ROS 2 using Python.
+```
+#!/usr/bin/env python3
+
+# 🌟 Importing ROS 2 core client libraries
+import rclpy
+from rclpy.node import Node
+
+# 🚀 Define a custom node class
+class MyNode(Node):
+    def __init__(self):
+        # 🧠 Initialize the node with the name 'py_test'
+        super().__init__("py_test")
+
+        # ✅ Print a welcome message once when node starts
+        self.get_logger().info("✨ Hello World from MyNode ✨")
+
+        # 🔢 Initialize the counter
+        self.counter_ = 0
+
+        # ⏱️ Set up a timer to call 'timer_callback' every 1 second
+        self.create_timer(1.0, self.timer_callback)
+
+    def timer_callback(self):
+        # 💬 Log "Hello <counter>" every second
+        self.get_logger().info(f"👋 Hello {self.counter_}")
+        self.counter_ += 1
+
+# 🎯 Entry point of the program
+def main(args=None):
+    # 🛠️ Initialize the rclpy library
+    rclpy.init(args=args)
+
+    # 🧩 Create an instance of MyNode
+    node = MyNode()
+
+    # 🔄 Keep the node alive and responsive
+    rclpy.spin(node)
+
+    # 📴 Shutdown the node gracefully
+    rclpy.shutdown()
+
+# 🚪 Start execution if run as a script
+if __name__ == "__main__":
+    main()
+
+```
+
 
