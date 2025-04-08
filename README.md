@@ -89,6 +89,56 @@ These nodes would communicate with each other using topics, services, and parame
 
 #### 1) Write a Python node- Minimal Code
 
+Running the Minimal Python Node
+
+Navigate to your ROS 2 package directory and create your first Python node:
+
+```bash
+cd ros2_ws/src/my_py_pkg/my_py_pkg
+
+# List current contents (optional)
+ls
+
+# Create a new Python file for your node
+touch my_first_node.py
+
+# Go back to the workspace source directory
+cd ../..
+
+# Open the workspace in VS Code
+code .
+```
+#### 🐍 Minimal ROS 2 Python Node
+
+Below is a simple ROS 2 Python node that logs "Hello world" when run:
+
+```python
+#!/usr/bin/env python3  # Add the interpreter line to run the script directly
+
+# 📦 Import necessary ROS 2 libraries
+import rclpy
+from rclpy.node import Node  # Import the Node class to create your custom node
+
+def main(args=None):
+    # 🔧 Initialize ROS 2 communication
+    rclpy.init(args=args)
+
+    # 🧠 Create a node with the name "py_test"
+    node = Node("py_test")
+
+    # 🗣️ Log a message to the terminal
+    node.get_logger().info("Hello world")
+
+    # 🛑 Shutdown the ROS 2 communication cleanly
+    rclpy.shutdown()
+
+# ▶️ Run the main function when the script is executed directly
+if __name__ == "__main__":
+    main()
+
+
+
+
   
 
 
