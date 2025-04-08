@@ -129,6 +129,9 @@ def main(args=None):
     # 🗣️ Log a message to the terminal
     node.get_logger().info("Hello world")
 
+   # 🗣️ Keep the node hanging by spinning it. Node is created and passed to spin functionality
+    rclpy.spin(node)
+
     # 🛑 Shutdown the ROS 2 communication cleanly
     rclpy.shutdown()
 
@@ -136,7 +139,36 @@ def main(args=None):
 if __name__ == "__main__":
     main()
 
+```
+### 🚀 Running the Python Node
 
+Navigate back to your file location and execute your Python node:
+
+```bash
+# 🔙 Go to the package's Python source folder
+cd ros2_ws/src/my_py_pkg/my_py_pkg
+
+# 📂 List the contents (optional)
+ls
+
+# ✅ Make the Python file executable
+chmod +x my_first_node.py
+
+# ▶️ Run the Python node
+./my_first_node.py
+
+
+```
+### ⚙️ Creating a ROS 2 Executable (Console Script)
+
+We are creating an **executable named `py_node`**.
+
+📁 Go to your `setup.py` file and scroll to the `entry_points` section.  
+🔧 Under the `console_scripts` list, add the following line:
+
+```python
+'py_node = my_py_pkg.my_first_node:main',
+```
 
 
   
