@@ -312,7 +312,7 @@ if __name__ == "__main__":
 
 ```
 ## Section 3: Introduction to ROS2 tools
-1~Let us introduce few basic ROS2 terminal commands 
+1~✨ Let us introduce few basic ROS2 terminal commands 
 ```bashrc
 # 📄 Show all sourced files in your shell
 cat ~/.bashrc
@@ -335,8 +335,72 @@ ros2 node info /turtlesim
 
 ```
 
-2~How to change the name of running node
+2~✨ How to Change the Name of a Running Node in ROS 2
+
+To change the name of a running node, you can use the --ros-args option with the -r remapping rule. Here’s how:
 ```bash
+# Change the node name to 'heystalker'
 ros2 run my_py_pkg py_node --ros-args -r __node:=heystalker
 ```
+🧠 Explanation:
+
+ros2 run runs the specified ROS 2 node, where my_py_pkg is the package name, and py_node is the executable within the package. The --ros-args flag is used to pass ROS-specific arguments, and -r __node:=heystalker remaps the node name to heystalker.
+
+
+3~✨ Turtlesim - Simulate a Robot in ROS 2
+
+The Turtlesim package is a great way to start experimenting with ROS 2 concepts and visualizing robot motion.
+```bash
+# Install the Turtlesim package for ROS 2 Humble
+sudo apt install ros-humble-turtlesim
+# Launch the Turtlesim simulation (a window will appear with a turtle)
+ros2 run turtlesim turtlesim_node
+# Launch the teleoperation node to control the turtle with the keyboard
+ros2 run turtlesim turtle_teleop_key
+```
+🧠Explanation: This allows you to control the turtle using your keyboard (with arrow keys or W, A, S, D).
+
+4~✨ RQT graph - use rqt_graph to view all active nodes/debug nodes.
+
+
+Exercise Goal:
+
+The core task is to use rqt_graph to visualize a specific arrangement of ROS 2 nodes. This will likely involve creating custom nodes and potentially organizing them within ROS 2 packages to match a provided (or implied) diagram.
+![Screenshot from 2025-04-09 14-04-11](https://github.com/user-attachments/assets/c635e22b-620f-4536-8455-d3245ad11212)
+
+## Section 4: ROS 2 Topics - Make Your Nodes Communicate Between Each Other. 
+1~✨ What is a ROS2 Topic?
+
+![image](https://github.com/user-attachments/assets/8a212b7b-3a59-4a05-9918-acf37701f1a1)
+
+📡 Publisher-Subscriber Model (ROS Concept)
+
+The image above demonstrates the Publisher-Subscriber architecture using a radio broadcast analogy.
+🧠 Concept
+
+    Topic: Acts as a named channel (e.g., 98.7 FM) through which data is transmitted. Publishers send data to a topic, and subscribers listen to it.
+
+    Publisher: A node that sends data/messages to a topic. In the image, these are represented by the radio towers.
+
+    Subscriber: A node that receives data/messages from a topic. These are the devices (like a mobile phone, car radio, or boombox) that are tuned in to the same frequency.
+
+💡 Key Points
+
+    Multiple publishers can publish to the same topic.
+
+    Multiple subscribers can listen to the same topic.
+
+    Publishers and subscribers are decoupled — they don’t need to know about each other.
+
+    Topics ensure scalable and flexible communication in a distributed system like ROS.
+
+📦 Real-world Example in ROS
+
+    A LiDAR sensor (Publisher) publishes point cloud data to the topic /lidar_points.
+
+    A visualization tool (Subscriber) subscribes to /lidar_points to render the environment.
+
+   
+2~✨ Write a Python Publisher?
+
 
