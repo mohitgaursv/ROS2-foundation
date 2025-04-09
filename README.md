@@ -311,5 +311,32 @@ if __name__ == "__main__":
     main()
 
 ```
+## Section 3: Introduction to ROS2 tools
+1~Let us introduce few basic ROS2 terminal commands 
+```bashrc
+# 📄 Show all sourced files in your shell
+cat ~/.bashrc
+# (Look for lines like: `source /opt/ros/humble/setup.bash` or `source ~/ros2_ws/install/setup.bash`)
 
+# 🚀 Run a ROS 2 package (e.g., demo_nodes_cpp) and explore available executables
+ros2 run demo_nodes_cpp <TAB>
+# (Press Tab after typing the package to see all runnable demos)
+
+# 📚 Get help for ros2 run
+ros2 run -h
+
+# 📡 List all currently active nodes
+ros2 node list
+
+# 🔍 Get detailed information about a specific node
+ros2 node info /<node_name>
+# Example:
+ros2 node info /turtlesim
+
+```
+
+2~How to change the name of running node
+```bash
+ros2 run my_py_pkg py_node --ros-args -r __node:=heystalker
+```
 
