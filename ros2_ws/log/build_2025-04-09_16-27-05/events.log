@@ -1,0 +1,64 @@
+[0.000000] (-) TimerEvent: {}
+[0.000736] (-) JobUnselected: {'identifier': 'my_cpp_pkg'}
+[0.001033] (my_py_pkg) JobQueued: {'identifier': 'my_py_pkg', 'dependencies': OrderedDict()}
+[0.001186] (my_py_pkg) JobStarted: {'identifier': 'my_py_pkg'}
+[0.098798] (-) TimerEvent: {}
+[0.199401] (-) TimerEvent: {}
+[0.299941] (-) TimerEvent: {}
+[0.400510] (-) TimerEvent: {}
+[0.501160] (-) TimerEvent: {}
+[0.601695] (-) TimerEvent: {}
+[0.702273] (-) TimerEvent: {}
+[0.802800] (-) TimerEvent: {}
+[0.903382] (-) TimerEvent: {}
+[0.985680] (my_py_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/my_py_pkg', 'build', '--build-base', '/home/adlab4/ros2_ws/build/my_py_pkg/build', 'install', '--record', '/home/adlab4/ros2_ws/build/my_py_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/adlab4/ros2_ws/src/my_py_pkg', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'adlab4', 'LC_TIME': 'ja_JP.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/adlab4', 'OLDPWD': '/home/adlab4/ros2_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ja_JP.UTF-8', 'MANAGERPID': '2992', 'SYSTEMD_EXEC_PID': '3242', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '10033', 'COLCON_PREFIX_PATH': '/home/adlab4/ros2_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'adlab4', 'JOURNAL_STREAM': '8:12691', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'adlab4', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/opt/cmake-3.28.3-linux-x86_64/bin:/opt/cmake-3.28.3-linux-x86_64/bin:/opt/cmake-3.28.3-linux-x86_64/bin:/opt/cmake-3.28.3-linux-x86_64/bin:/opt/cmake-3.28.3-linux-x86_64/bin:/home/adlab4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/adlab4-HP-Z8-G5-Workstation-Desktop-PC:@/tmp/.ICE-unix/3219,unix/adlab4-HP-Z8-G5-Workstation-Desktop-PC:/tmp/.ICE-unix/3219', 'INVOCATION_ID': '4f388e481f994a5189413d4108f4d573', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ja_JP.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'LC_TELEPHONE': 'ja_JP.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/adlab4/ros2_ws/install/my_py_pkg:/home/adlab4/ros2_ws/install/my_cpp_pkg:/home/adlab4/ros2_ws/install/carla_t2_vehicle_launch:/home/adlab4/ros2_ws/install/carla_t2_vehicle_description:/home/adlab4/ros2_ws/install/carla_t2_sensor_kit_launch:/home/adlab4/ros2_ws/install/carla_t2_sensor_kit_description:/home/adlab4/ros2_ws/install/carla_t2_common_sensor_launch:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ja_JP.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:4f07680a-61b0-46ca-ab0f-b3d1016b7390', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ja_JP.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ja_JP.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/adlab4/ros2_ws/build/my_py_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/adlab4/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'UE4_ROOT': '/home/adlab4/UnrealEngine_4.26', 'PYTHONPATH': '/home/adlab4/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adlab4/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/adlab4/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages::/home/adlab4/carla/PythonAPI/carla/dist/carla-0.9.14-py3.10-linux-x86_64.egg:/home/adlab4/carla/PythonAPI/carla/dist/carla-0.9.14-py3.10-linux-x86_64.egg', 'LC_NUMERIC': 'ja_JP.UTF-8', 'LC_PAPER': 'ja_JP.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'UE_PATH': '/home/adlab4/carla/UnrealEngine_4.26', 'CMAKE_PREFIX_PATH': '/home/adlab4/ros2_ws/install/my_cpp_pkg:/home/adlab4/ros2_ws/install/carla_t2_vehicle_launch:/home/adlab4/ros2_ws/install/carla_t2_vehicle_description:/home/adlab4/ros2_ws/install/carla_t2_sensor_kit_launch:/home/adlab4/ros2_ws/install/carla_t2_sensor_kit_description:/home/adlab4/ros2_ws/install/carla_t2_common_sensor_launch'}, 'shell': False}
+[1.003574] (-) TimerEvent: {}
+[1.104155] (-) TimerEvent: {}
+[1.178269] (my_py_pkg) StderrLine: {'line': b"/home/adlab4/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[1.178745] (my_py_pkg) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[1.204322] (-) TimerEvent: {}
+[1.304843] (-) TimerEvent: {}
+[1.312824] (my_py_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[1.329340] (my_py_pkg) StdoutLine: {'line': b'creating ../../build/my_py_pkg/my_py_pkg.egg-info\n'}
+[1.329746] (my_py_pkg) StdoutLine: {'line': b'writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO\n'}
+[1.330312] (my_py_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt\n'}
+[1.330710] (my_py_pkg) StdoutLine: {'line': b'writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt\n'}
+[1.331314] (my_py_pkg) StdoutLine: {'line': b'writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt\n'}
+[1.331573] (my_py_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt\n'}
+[1.331731] (my_py_pkg) StdoutLine: {'line': b"writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'\n"}
+[1.381669] (my_py_pkg) StdoutLine: {'line': b"reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'\n"}
+[1.383103] (my_py_pkg) StdoutLine: {'line': b"writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'\n"}
+[1.383500] (my_py_pkg) StdoutLine: {'line': b'running build\n'}
+[1.383677] (my_py_pkg) StdoutLine: {'line': b'running build_py\n'}
+[1.384126] (my_py_pkg) StdoutLine: {'line': b'creating /home/adlab4/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg\n'}
+[1.384537] (my_py_pkg) StdoutLine: {'line': b'copying my_py_pkg/my_first_node.py -> /home/adlab4/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg\n'}
+[1.384695] (my_py_pkg) StdoutLine: {'line': b'copying my_py_pkg/robot_news_station.py -> /home/adlab4/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg\n'}
+[1.384761] (my_py_pkg) StdoutLine: {'line': b'copying my_py_pkg/template_python_node.py -> /home/adlab4/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg\n'}
+[1.384823] (my_py_pkg) StdoutLine: {'line': b'copying my_py_pkg/__init__.py -> /home/adlab4/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg\n'}
+[1.384882] (my_py_pkg) StdoutLine: {'line': b'running install\n'}
+[1.390219] (my_py_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[1.405003] (-) TimerEvent: {}
+[1.407184] (my_py_pkg) StdoutLine: {'line': b'creating /home/adlab4/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg\n'}
+[1.407492] (my_py_pkg) StdoutLine: {'line': b'copying /home/adlab4/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/my_first_node.py -> /home/adlab4/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg\n'}
+[1.407877] (my_py_pkg) StdoutLine: {'line': b'copying /home/adlab4/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/robot_news_station.py -> /home/adlab4/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg\n'}
+[1.408235] (my_py_pkg) StdoutLine: {'line': b'copying /home/adlab4/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/template_python_node.py -> /home/adlab4/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg\n'}
+[1.408364] (my_py_pkg) StdoutLine: {'line': b'copying /home/adlab4/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/__init__.py -> /home/adlab4/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg\n'}
+[1.408459] (my_py_pkg) StdoutLine: {'line': b'byte-compiling /home/adlab4/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/my_first_node.py to my_first_node.cpython-310.pyc\n'}
+[1.408805] (my_py_pkg) StdoutLine: {'line': b'byte-compiling /home/adlab4/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/robot_news_station.py to robot_news_station.cpython-310.pyc\n'}
+[1.409371] (my_py_pkg) StdoutLine: {'line': b'byte-compiling /home/adlab4/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/template_python_node.py to template_python_node.cpython-310.pyc\n'}
+[1.409678] (my_py_pkg) StdoutLine: {'line': b'byte-compiling /home/adlab4/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/__init__.py to __init__.cpython-310.pyc\n'}
+[1.409915] (my_py_pkg) StdoutLine: {'line': b'running install_data\n'}
+[1.410062] (my_py_pkg) StdoutLine: {'line': b'creating /home/adlab4/ros2_ws/install/my_py_pkg/share/ament_index/resource_index/packages\n'}
+[1.410172] (my_py_pkg) StdoutLine: {'line': b'copying resource/my_py_pkg -> /home/adlab4/ros2_ws/install/my_py_pkg/share/ament_index/resource_index/packages\n'}
+[1.410365] (my_py_pkg) StdoutLine: {'line': b'copying package.xml -> /home/adlab4/ros2_ws/install/my_py_pkg/share/my_py_pkg\n'}
+[1.410504] (my_py_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.428999] (my_py_pkg) StdoutLine: {'line': b'Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/adlab4/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info\n'}
+[1.429844] (my_py_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[1.505178] (-) TimerEvent: {}
+[1.584044] (my_py_pkg) StdoutLine: {'line': b'Installing py_node script to /home/adlab4/ros2_ws/install/my_py_pkg/lib/my_py_pkg\n'}
+[1.584530] (my_py_pkg) StdoutLine: {'line': b'Installing robot_news_station script to /home/adlab4/ros2_ws/install/my_py_pkg/lib/my_py_pkg\n'}
+[1.584970] (my_py_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/adlab4/ros2_ws/build/my_py_pkg/install.log'\n"}
+[1.605360] (-) TimerEvent: {}
+[1.628925] (my_py_pkg) CommandEnded: {'returncode': 0}
+[1.641444] (my_py_pkg) JobEnded: {'identifier': 'my_py_pkg', 'rc': 0}
+[1.642530] (-) EventReactorShutdown: {}

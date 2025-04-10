@@ -1,0 +1,42 @@
+[0.989s] Invoking command in '/home/adlab4/ros2_ws/src/my_py_pkg': PYTHONPATH=/home/adlab4/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adlab4/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/adlab4/ros2_ws/build/my_py_pkg/build install --record /home/adlab4/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed install_data
+[1.177s] /home/adlab4/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[1.178s]   warnings.warn(msg)
+[1.312s] running egg_info
+[1.328s] creating ../../build/my_py_pkg/my_py_pkg.egg-info
+[1.329s] writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[1.329s] writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[1.330s] writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[1.330s] writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[1.330s] writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[1.331s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[1.381s] reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[1.382s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[1.382s] running build
+[1.383s] running build_py
+[1.383s] creating /home/adlab4/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[1.383s] copying my_py_pkg/my_first_node.py -> /home/adlab4/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[1.384s] copying my_py_pkg/robot_news_station.py -> /home/adlab4/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[1.384s] copying my_py_pkg/template_python_node.py -> /home/adlab4/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[1.384s] copying my_py_pkg/__init__.py -> /home/adlab4/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[1.384s] running install
+[1.389s] running install_lib
+[1.406s] creating /home/adlab4/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[1.406s] copying /home/adlab4/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/my_first_node.py -> /home/adlab4/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[1.407s] copying /home/adlab4/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/robot_news_station.py -> /home/adlab4/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[1.407s] copying /home/adlab4/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/template_python_node.py -> /home/adlab4/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[1.407s] copying /home/adlab4/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/__init__.py -> /home/adlab4/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[1.407s] byte-compiling /home/adlab4/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/my_first_node.py to my_first_node.cpython-310.pyc
+[1.408s] byte-compiling /home/adlab4/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/robot_news_station.py to robot_news_station.cpython-310.pyc
+[1.408s] byte-compiling /home/adlab4/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/template_python_node.py to template_python_node.cpython-310.pyc
+[1.409s] byte-compiling /home/adlab4/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/__init__.py to __init__.cpython-310.pyc
+[1.409s] running install_data
+[1.409s] creating /home/adlab4/ros2_ws/install/my_py_pkg/share/ament_index/resource_index/packages
+[1.409s] copying resource/my_py_pkg -> /home/adlab4/ros2_ws/install/my_py_pkg/share/ament_index/resource_index/packages
+[1.409s] copying package.xml -> /home/adlab4/ros2_ws/install/my_py_pkg/share/my_py_pkg
+[1.409s] running install_egg_info
+[1.428s] Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/adlab4/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info
+[1.429s] running install_scripts
+[1.583s] Installing py_node script to /home/adlab4/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[1.583s] Installing robot_news_station script to /home/adlab4/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[1.584s] writing list of installed files to '/home/adlab4/ros2_ws/build/my_py_pkg/install.log'
+[1.628s] Invoked command in '/home/adlab4/ros2_ws/src/my_py_pkg' returned '0': PYTHONPATH=/home/adlab4/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adlab4/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/adlab4/ros2_ws/build/my_py_pkg/build install --record /home/adlab4/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed install_data
